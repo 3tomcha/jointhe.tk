@@ -1,0 +1,15 @@
+.home {
+    display: grid;
+    row-gap: 2rem;
+    .posts {
+        font-weight: bold;
+        padding: 2rem;
+        border: 1px solid #ddd;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .time {
+        color: #999;
+    }
+}

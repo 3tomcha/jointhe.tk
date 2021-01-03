@@ -1,0 +1,29 @@
+.single {
+    .primary {
+        padding: 2rem;
+        background-color: white;
+        h2 {
+            font-size: 4rem;
+            font-weight: bold;
+            font-weight: bold;
+            margin-bottom: 5rem;
+            + p {
+                margin-bottom: 2rem;   
+            }
+        }
+        h1 {
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 2.4rem;
+            margin-top: 2.2rem;
+        }
+        pre {
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-left: 1em;
+            background-color: #364549;
+            color: #e3e3e3;
+            font-size: 1.5rem;
+        }
+    }
+}
