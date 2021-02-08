@@ -3,8 +3,13 @@
         @content;
     }
 }
-@mixin sp() {
+@mixin tab() {
     @media screen and (min-width: 600px) and (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin sp() {
+    @media screen and (max-width: 599px) {
         @content;
     }
 }
@@ -12,6 +17,9 @@
 html {
     font-size: 62.5%;
     margin-top: 0!important;
+    @include sp() {
+        font-size: 50%;
+    }
 }
 body {
     font-size: 1.6rem;
@@ -20,7 +28,7 @@ body {
     margin: 0;
     background-color: #f6f6f4;
     @include pc() {
-        row-gap: 3rem;
+        row-gap: 6rem;
         display: grid;
     }
 }
@@ -31,7 +39,7 @@ h1 {
     width: 100%;
     box-sizing: border-box;
     @include pc() {
-        width: 1020px;
+        width: 1080px;
         margin-left: auto;
         margin-right: auto;
     } 
@@ -50,8 +58,5 @@ a {
     }
 }
 .container {
-    @include pc() {
-        display: grid;
-        grid-template-columns: 1fr 300px;
-    }
+    line-height: 1.8;
 }

@@ -1,10 +1,15 @@
 .home {
+    .container {
+        .primary {
+            padding: 2rem;
+            background-color: white;
+        }        
+    }
     display: grid;
     row-gap: 2rem;
     .posts {
         font-weight: bold;
         padding: 2rem;
-        border: 1px solid #ddd;
     }
     h2 {
         font-size: 3rem;

@@ -1,0 +1,7 @@
+footer {
+    background-color: #2A2A57;
+    padding: 6rem;
+    @include sp() {
+        padding: 3rem;
+    }
+}
